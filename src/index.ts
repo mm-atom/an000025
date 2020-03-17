@@ -1,5 +1,5 @@
-import an124 from '@dfeidao/fd-an000124';
-import an128 from '@dfeidao/fd-an000128';
+import an23 from '@mmstudio/an000023';
+import an22 from '@mmstudio/an000022';
 import FormData from 'form-data';
 import fetch from 'node-fetch';
 
@@ -10,11 +10,11 @@ import fetch from 'node-fetch';
  * @returns true 违法图片 false 正常图片
  */
 export default async function check(file: string) {
-	const token = await an128();
-	const ran124 = await an124(file);
+	const token = await an22();
+	const r23 = await an23(file);
 	const form = new FormData();
-	form.append(ran124.file_name, ran124.data, {
-		filename: ran124.file_name
+	form.append(r23.name, r23.data, {
+		filename: r23.name
 	});
 	const url = `https://api.weixin.qq.com/wxa/img_sec_check?access_token=${token}`;
 	const res = await fetch(url, {

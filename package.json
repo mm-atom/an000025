@@ -38,8 +38,15 @@
 		}
 	],
 	"license": "MIT",
-	"dependencies": {},
+	"dependencies": {
+		"@mmstudio/an000022": "1.0.202003171131",
+		"@mmstudio/an000023": "1.0.202003171131",
+		"form-data": "3.0.0",
+		"node-fetch": "2.6.0"
+	},
 	"devDependencies": {
+		"@mmstudio/config": "latest",
+		"@types/node-fetch": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
 		"ava": "latest",
