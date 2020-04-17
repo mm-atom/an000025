@@ -1,6 +1,6 @@
 {
 	"name": "@mmstudio/an000025",
-	"version": "1.0.202003171332",
+	"version": "1.0.202004170813",
 	"description": "微信-是否为违法图片",
 	"scripts": {
 		"test": "tsc && ava ./tests/*.js",
